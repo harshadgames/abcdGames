@@ -1,0 +1,167 @@
+<?php include '../../config.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css"> </link>
+    <!-- Google Tag Manager -->
+    <?php include (BASE_PATH . '/header.php'); ?>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<?php include (BASE_PATH . '/body.php'); ?>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<!---------------------- Nav Bar------------------->
+
+    <?php include '../../nav.php'; ?>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch('../../nav.php')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
+
+
+
+<!---------------------- Main Game------------------->
+
+    <section id="game">
+
+      <div class="title-header">
+
+        <h2>
+          <span>Learn  A-B-C-D</span>
+        </h2>
+        <div class="title-underline">
+          <p class="underline-style"></p>
+        </div>
+        
+      </div>
+      <canvas id="canvas" width="800" height="500" tabindex="0"> </canvas>
+
+      <img id="backgroudImage" src="./images/background.png" />
+      <img id="explosionClash" src="../../images/explosions.png" />
+      <img id="targetImage" src="../../images/alphabets/alphabets.png" />
+      <img id="bow1" src="../../images/rocket.png" />
+      <audio id="audio" src="../../audio/galaxy.mp3" loop></audio>
+      
+      
+    </section>
+
+
+
+
+
+
+<!---------------Text------------------------------>
+  <section class="text-section">
+    <div class="container">
+      <div class="text-header">
+        <h2>Why Brainy Bunny</h2>
+      </div>
+      <div class="text">
+        <div class="text-card">
+          <div class="text-content">
+            <h4>
+              How to play
+            </h4>
+
+            <p>
+
+              If you are playing the game on mobile, click the rocket when the balloon comes right above it. On a laptop, you can use the mouse click. The objective of the game is to pop the balloon containing the alphabet. When you hit the target alphabet successfully, you hear its pronunciation along with the name of the object that starts with the alphabet. This balloon shooting game for kids online falls under the category of simple click games, space back games, or simple touch games. Also, note that this is a perfect educational fun game to play on loop and keep kids engaged.
+
+            </p>
+
+          </div>
+        </div>
+
+        <div class="text-card">
+          <div class="text-content">
+            <h4>
+              "About the game!"
+            </h4>
+
+            <p>
+              If you are playing the game on mobile, click the rocket when the balloon comes right above it. On a laptop, you can use the mouse click. The objective of the game is to pop the balloon containing the alphabet. When you hit the target alphabet successfully, you hear its pronunciation along with the name of the object that starts with the alphabet. This balloon shooting game for kids online falls under the category of simple click games, space back games, or simple touch games. Also, note that this is a perfect educational fun game to play on loop and keep kids engaged.
+            </p>
+
+
+
+
+          </div>
+        </div>
+
+        <!-- Add more review cards as needed -->
+      </div>
+
+
+      
+  
+</section>
+
+
+<!---------------------other games -------------------->
+<?php include '../../otherGames.php'; ?>
+
+<div id="otherGames"></div>
+<script>
+  fetch('../../otherGames.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('otherGames').innerHTML = data;
+      });
+</script>
+
+
+<!-----------------------------------reviews----------------------------->
+<?php include '../../userReviews.php'; ?>
+
+<div id="userReviews"></div>
+<script>
+  fetch('../../userReviews.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('userReviews').innerHTML = data;
+      });
+</script>
+
+
+<!---------------------------------- Contact Forms ------------------------------------------->
+
+
+<iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/harshadkhanapure/form/ContactUs/formperma/AQT9u8G6Nqb_zTYIDsFpfD6MUXUmyuzoKBFYGK2NRW0'></iframe>
+
+<!----------------------------------- Footer ------------------------------------------->
+
+
+<?php include '../../footer.php'; ?>
+
+<div id="footer"></div>
+<script>
+  fetch('../../footer.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
+</script>
+
+
+<!-----------------------------Linking Script------------------------------------------->
+
+<script type="module" src="script.js"></script>
+</body>
+
+</html>

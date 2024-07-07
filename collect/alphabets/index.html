@@ -1,0 +1,156 @@
+<?php include '../../config.php'; ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- Google Tag Manager -->
+    <?php include '../../header.php'; ?>
+    <!-- End Google Tag Manager -->
+  </head>
+
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+          <?php include '../../body.php'; ?>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <?php include '../../nav.php'; ?>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch('../../nav.php')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
+
+
+
+<!---main games -->
+
+    <section id="game">
+
+      <div class="title-header">
+
+        <h2>
+          <span>Learn  A-B-C-D</span>
+        </h2>
+        <div class="title-underline">
+          <p class="underline-style"></p>
+        </div>
+        
+      </div>
+
+
+      <canvas id="canvas" width="800" height="500"> </canvas>
+
+      <img id="backgroudImage" src="./images/background.jpg" />
+
+      <img id="explosionClash" src="../../images/explosions.png" />
+      <img id="targetImage" src="../../images/alphabets/alphabets.png" />
+      <img id="playerImage" src="./images/basket.png" />
+
+      <img id="nextImage" src="../../images/next.png">
+
+      <img id="previousImage" src="../../images/previous.png">
+      <audio id="audio" src="../../audio/sea.mp3" loop></audio>
+
+      <script type="module" src="script.js"></script>
+    </section>
+
+
+
+
+<!-----------------Text ------------------------>
+
+
+  <section class="text-section">
+    <div class="container">
+      <div class="text-header">
+        <h2>Why Brainy Bunny</h2>
+      </div>
+      <div class="text">
+        <div class="text-card">
+          <div class="text-content">
+            <h4>
+              How to play
+            </h4>
+
+            <p>
+              If your baby is playing the game on mobile, click on the right and left arrows in the game window for the basket to move. On a laptop, you can use the side arrows to move. The objective is to move the basket to capture the alphabet falling from the air by reaching below it. When you capture the alphabet successfully, you hear its pronunciation along with the name of the object that starts with the alphabet. This free toddlers' game falls under the category of simple click games, space back games, or simple touch games. Also, note that this is a perfect game to play on loop to keep toddlers engaged.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="text-card">
+          <div class="text-content">
+            <h4>
+
+              About The Game
+
+            </h4>
+
+            <p>
+              This is a simple game that can be played as a babysitting game. The game aims to teach alphabets to 1-2-year-old infants in a fun way. It would also help toddlers improve hand-eye coordination, reflexes, and the ability to move the basket in the right direction. As parents, we are sure that you must have had fun playing video games. Do tell your babies about your childhood memories of your favorite games.
+            </p>
+
+
+
+          </div>
+        </div>
+
+        <!-- Add more review cards as needed -->
+      </div>
+
+
+      
+  
+</section>
+
+
+<!------------Other games---------------------------------------->
+
+<?php include '../../otherGames.php'; ?>
+
+<div id="otherGames"></div>
+<script>
+  fetch('../../otherGames.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('otherGames').innerHTML = data;
+      });
+</script>
+
+
+
+<iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/harshadkhanapure/form/ContactUs/formperma/AQT9u8G6Nqb_zTYIDsFpfD6MUXUmyuzoKBFYGK2NRW0'></iframe>
+
+<!-- Footer -->
+<?php include 'footer.php'; ?>
+
+<div id="footer"></div>
+<script>
+  fetch('footer.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
+</script>
+<!-------------------------Script---------------------------------->
+    <script type="module" src="script.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  </body>
+
+
+
+
+</html>

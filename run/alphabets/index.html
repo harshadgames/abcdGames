@@ -1,0 +1,183 @@
+
+<?php include '../../config.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainyBunny-Play and Learn</title>
+
+
+    <link rel="stylesheet" href="../../style.css"> </link>
+    <!-----------------------------Linking Script------------------------------------------->
+    <script type="module" src="script.js"></script>
+
+
+
+
+    <!-- Google Tag Manager -->
+    <?php include (BASE_PATH . '/header.php'); ?>
+    <!-- End Google Tag Manager -->
+  </head>
+
+
+  <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <?php include (BASE_PATH . '/body.php'); ?>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+<!---------------------- Nav Bar------------------->
+
+<?php include '../../nav.php'; ?>
+
+<div id="nav-placeholder"></div>
+<script>
+  fetch('../../nav.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+      });
+</script>
+
+
+
+
+
+
+
+
+
+    <!----------------------------Canvas--------------------------------------------->
+    <section id="game">
+      <div class="title-header">
+
+        <h2>
+          <span>Learn  A-B-C-D</span>
+        </h2>
+        <div class="title-underline">
+          <p class="underline-style"></p>
+        </div>
+        
+      </div>
+      <canvas id="canvas" width="800" height="500" tabindex="0"> </canvas>
+
+      <img id="startGame" src="../../images/start.jpg" />
+      <img id="playerImage" src="./images/player.png" />
+
+      <img id="backgroudImage1" src="./images/background1.png" />
+      <img id="backgroudImage2" src="./images/background2.png" />
+
+      <img id="explosionClash" src="../../images/explosions.png" />
+
+      <audio id="audio" src="../../audio/run.mp3" loop></audio>
+      
+    </section>
+
+
+
+        <!---------------Text------------------------------>
+
+        <section class="text-section">
+          <div class="container">
+            <div class="text-header">
+              <h2>Why Brainy Bunny</h2>
+            </div>
+            <div class="text">
+              <div class="text-card">
+                <div class="text-content">
+                  <h4>
+                    How to Play
+                  </h4>
+    
+                  <p>
+
+                    If the kid is playing the game on mobile, click on the game window for the player to jump. On a laptop, you can use the up arrow to jump. The objective is to jump to capture the alphabet in the air by reaching near it. When you successfully capture the alphabet, you hear its pronunciation along with the name of the object that starts with the alphabet. Be careful; you will also need to jump when there is no platform to land on. This online kids' game falls under the category of simple click games, space button games, or simple touch games. Hence, the player will start racing in the game on its own. Also, note that this is a perfect game to play on loop to keep kids engaged.
+ 
+                  </p>
+>
+                </div>
+              </div>
+    
+              <div class="text-card">
+                <div class="text-content">
+                  <h4>
+
+                    "About Game"
+
+                  </h4>
+    
+                  <p>
+
+                    This is a simple educational game for kindergarteners and preschoolers, which can be played by kids aged 1-4 years. The game aims to teach alphabets to kids in a fun way. It also helps kids improve hand-eye coordination, reflexes, and patience as they wait for the right opportunity to hit the target. As parents, we are sure that you must have had fun playing video games like Super Mario or any other fun learning games. Do tell your kids about your childhood memories of your favorite games.
+
+                  </p>
+    
+
+  
+                </div>
+              </div>
+    
+              <!-- Add more review cards as needed -->
+            </div>
+  
+  
+            
+        
+      </section>
+
+
+    
+<!------------Other games---------------------------------------->
+
+<?php include '../../otherGames.php'; ?>
+
+<div id="otherGames"></div>
+<script>
+  fetch('../../otherGames.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('otherGames').innerHTML = data;
+      });
+</script>
+
+
+    <!-----------------------------------reviews----------------------------->
+      <?php include '../../userReviews.php'; ?>
+
+      <div id="userReviews"></div>
+      <script>
+        fetch('../../userReviews.php')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('userReviews').innerHTML = data;
+            });
+      </script>
+
+
+
+
+
+<!----------------------------------- Footer ------------------------------------------->
+
+
+<?php include '../../footer.php'; ?>
+
+<div id="footer"></div>
+<script>
+  fetch('../../footer.php')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      });
+</script>
+
+    <div class="loading-screen">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: white;
+  --accent-color: #eeb721;
+  --accent-color-dark: #005ca8;
+  --padding-inline-section: 0px;
+}
+
+body {
+  font-family: Comic Sans MS;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: Comic Sans MS;
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: Comic Sans MS;
+}
+ul {
+  list-style: none;
+}
+
+.yellow {
+  color: #eeb721;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #005ca8;
+}
+
+.bold {
+  font-weight: 200;
+}
+
+.underline-style {
+  background: #eeb721;
+  border-radius: 2rem;
+  height: 10px;
+  width: 60%;
+  margin: 1%;
+}
+
+/* Utility*/
+
+.small-bold-text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: azure;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 0%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 6px 12px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  padding: 6px 12px;
+  transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: white !important;
+}
+
+/* top banner*/
+.top-banner {
+  background-color: #183b56;
+}
+
+.banner-text {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* ------------------------------------Nav ----------------------------*/
+
+/* Keep your existing CSS rules */
+
+/* Add styles for the fixed navigation bar */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use vw (viewport width) instead of 100% to ensure full screen width */
+  background-color: #12cca8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  overflow: visible; /* Allow content to overflow */
+}
+
+/* Adjust the container styles */
+.container.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  position: relative; /* Position relative to contain absolutely positioned logo */
+}
+
+.company-logo img {
+  width: 110px;
+  position: absolute;
+  top: -10px; /* Adjust this value to control how much the logo overflows */
+  left: 20px;
+  z-index: 1;
+}
+
+.company-logo-footer img {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-links ul {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  justify-content: end;
+  gap: 40px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+.hover-link {
+  color: var(--primary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+  color: var(--accent-color);
+}
+
+/*--------------------Header--------------------------*/
+header {
+  padding: 5%;
+  background-image: url(../images/header/background2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 700px;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.drawGame {
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 70, 0, 1);
+}
+
+.item {
+  text-align: center;
+}
+
+.header-left img {
+  width: 200%; /* Set the width to 100% of the parent element */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+.header-left {
+  z-index: 2; /* Ensure the image appears above the background */
+  max-width: 10%;
+  transform: translate(-110%, 0%);
+}
+
+.header-mid {
+  display: flex;
+  flex-direction: column;
+  max-width: 10%;
+  transform: translate(0, 0%);
+}
+
+.header-mid img {
+  width: 400%; /* Set the width to 100% of the parent element */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 10%;
+  z-index: 1; /* Ensure the image appears above the background */
+  transform: translate(50%, 0%);
+}
+
+.button-header-1 {
+  background-color: #6814c9;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-weight: 300;
+  padding: 20%, 20%;
+  font-size: 500%;
+  width: 200%;
+  height: 0%;
+  border-color: #9b20f2;
+  box-shadow: 0 0.35rem 0 0 #5d25b7;
+  border-radius: 12em;
+}
+
+.button-header-2 {
+  background-color: #f9432b;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-weight: 300;
+  padding: 20%, 20%;
+  font-size: 500%;
+  width: 200%;
+  height: 0%;
+  border-color: #f9432b;
+  box-shadow: 0 0.35rem 0 0 #c6283f;
+  border-radius: 12em;
+  transform: translate(40%, 0%);
+}
+
+.button-header-other {
+  background-color: #6814c9;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  font-weight: 300;
+  padding: 20%, 20%;
+  font-size: 500%;
+  width: 500%;
+  height: 0%;
+  border-color: #9b20f2;
+  box-shadow: 0 0.35rem 0 0 #5d25b7;
+  border-radius: 12em;
+}
+
+.hero-text {
+  color: #fff;
+  font-family: Comic Sans MS;
+  font-size: 80%;
+  font-weight: 900;
+  padding: 1rem 0.625rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0.25rem 0 #ffcd2b;
+}
+
+.sub-header-items {
+  padding: 1px;
+  justify-content: center;
+  background-size: cover;
+  min-height: 20px;
+  margin-top: -1%;
+  background-color: #a2d82b;
+}
+
+.sub-header-item {
+  border-radius: 50%;
+  background-color: #005ca8;
+  padding: 1px;
+  margin: 10px;
+}
+
+/* Title Section */
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 90px;
+  background-color: #eeb721;
+  margin: 0%;
+}
+
+.title-header h2 {
+  font-size: 3rem;
+  color: var(--primary-text-color);
+}
+
+.title-underline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.underline-style {
+  background: whitesmoke;
+  border-radius: 2rem;
+  height: 10px;
+  width: 60%;
+  margin: 1%;
+}
+
+/* Features */
+
+.game-list-hero {
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.game-list-hero-image img {
+  background-color: #d2006e;
+  border-color: #d2006e;
+}
+
+.game-list-hero-image img {
+  border-radius: 2em;
+  border-color: #f9432b;
+  box-shadow: 1rem 1rem 0 0 #c6283f;
+  max-width: 100%;
+}
+
+.upcoming-game-list-hero-text {
+  text-align: center;
+}
+
+.features-section {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+  align-items: center;
+  position: relative;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.features-area {
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.features-header {
+  padding: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-area-jump,
+.feature-area-shoot,
+.feature-area-collect {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.feature-area-jump {
+  background-color: #005ca8;
+  background-image: url(https://www.abcya.com/client/assets/gradeIconLetters-69f6562aec4620231efc.svg);
+  background-repeat: no-repeat;
+}
+
+.feature-area-draw {
+  background-color: #005ca8;
+  background-repeat: no-repeat;
+}
+
+.feature-area-collect {
+  background-color: #dd3c68;
+}
+
+.feature-area-shoot {
+  background-color: white;
+}
+
+.features-header h2 {
+  margin-bottom: 100px;
+}
+
+.features-area-header {
+  padding: auto;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.feature-area-header h2 {
+  color: #eeb721;
+  margin-bottom: 10px; /* Add margin to separate from section content */
+}
+
+.feature-area-header h3 {
+  color: #eeb721;
+  font-size: 5rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid whitesmoke; /* Add a border for demonstration purposes */
+  max-width: 300px; /* Adjust the max-width as needed */
+  max-height: 230px;
+
+  /* Maintain a 16:9 aspect ratio (height is 56.25% of the width) */
+  position: relative;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  overflow: hidden;
+  background-color: #eeb721;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.upComing-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.upComing-game-card {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid whitesmoke; /* Add a border for demonstration purposes */
+  max-width: 500px;
+  max-height: 300px; /* Adjust the max-width as needed */
+
+  /* Maintain a 16:9 aspect ratio (height is 56.25% of the width) */
+
+  padding-top: 0%;
+  padding-bottom: 0%;
+  overflow: hidden;
+  background-color: #eeb721;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.single-game-card {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid whitesmoke; /* Add a border for demonstration purposes */
+  max-width: 500px;
+  max-height: 300px; /* Adjust the max-width as needed */
+
+  /* Maintain a 16:9 aspect ratio (height is 56.25% of the width) */
+
+  padding-top: 0%;
+  padding-bottom: 0%;
+  overflow: hidden;
+  background-color: #eeb721;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.upComing-game-card:hover {
+  background-color: #f09918; /* Change the background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+}
+
+.upComing-game-card:active {
+  background-color: black; /* Change the background color when clicked */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow when clicked */
+}
+
+.feature-card:hover {
+  background-color: #f09918; /* Change the background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow on hover */
+}
+
+.feature-card:active {
+  background-color: black; /* Change the background color when clicked */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow when clicked */
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.feature-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.feature-card a {
+  padding: 6%;
+}
+
+.single-game-card a {
+  padding: 6%;
+}
+
+.upComing-game-card a {
+  padding: 6%;
+  font-weight: 900;
+}
+
+.notifyMe {
+  font-size: 100%;
+}
+
+a.white {
+  color: white;
+}
+
+/* Review Section*/
+.reviews-section {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.review-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px; /* Set a fixed height */
+}
+
+.review-content p {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.review-author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-author p {
+  font-size: 0.9rem;
+  color: var(--primary-text-color);
+}
+
+/* Add Swiper-specific styles */
+.reviews-section {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews-header h2 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.review-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-content p {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.review-author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-author p {
+  font-size: 0.9rem;
+  color: var(--primary-text-color);
+}
+
+/* Add Swiper-specific styles */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms opacity;
+  -o-transition: 300ms opacity;
+  transition: 300ms opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Text Section */
+.text-section {
+  background-color: #f4f4f4;
+  padding: 40px 40px;
+  padding-bottom: 40px;
+}
+
+.text-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text-header h2 {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text-card {
+  background-color: #eeb721;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 45%;
+}
+
+.text-card-wide {
+  background-color: #eeb721;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  line-height: 1.5;
+}
+
+.text-content h4 {
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  line-height: 1.5;
+}
+
+/* footer */
+
+.link-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  max-width: 20%;
+  min-width: 20%;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary-text-color);
+  padding-block: 20px;
+}
+
+.footer-container a,
+.footer-container p {
+  color: cornsilk;
+  font-family: Comic Sans MS;
+  font-size: small;
+}
+
+.footer-container {
+  color: cornsilk;
+}
+
+.sub-footer-container {
+  background-color: #12cca8;
+}
+
+/*-------------------- Jump CSS-----------------*/
+
+#playerImage,
+#backgroudImage1,
+#backgroudImage2,
+#targetImage,
+#explosionClash,
+#startGame,
+#nextImage,
+#previousImage,
+#bird,
+#video {
+  display: none;
+}
+
+video {
+  width: 100%;
+}
+
+#canvas1 {
+  background: blue;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5rem;
+}
+
+/*---------------------Shoot CSS----------------------*/
+
+#playerImage,
+#backgroudImage,
+#targetImage,
+#explosionClash,
+#bow1,
+#arrow {
+  display: none;
+}
+
+#canvas {
+  background: blue;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -0.7rem;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+/* ----- css collect------- */
+
+#playerImage,
+#backgroudImage,
+#targetImage,
+#explosionClash {
+  display: none;
+}
+
+/* The popup form - hidden by default */
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* The form content */
+.form-content {
+  background-color: #fff;
+
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: center;
+}
+
+.contact-form-content {
+  background-color: #fff;
+
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: center;
+}
+
+/* Close button */
+.close-btn {
+  top: -40px;
+  right: 0px;
+  font-size: 24px;
+  cursor: pointer;
+  font-size: 24px; /* Size of the close button */
+  font-weight: bold; /* Make the close button bold */
+  color: black; /* Color of the close button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  position: absolute;
+}
+
+.thank-content {
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.form-group {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#popup-header {
+  background-color: #f09918;
+}
+
+.form-group button {
+  padding: 10px;
+  background-color: #f09918;
+}
+
+/*-------------------- Media query-----------------*/
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+  }
+
+  header {
+    padding: 5%;
+    background-image: url(../images/header/background2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header-section {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drawGame {
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+  }
+
+  .item {
+    text-align: center;
+  }
+
+  .header-left img {
+    width: 300%; /* Set the width to 100% of the parent element */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+
+  .header-left {
+    z-index: 2; /* Ensure the image appears above the background */
+    max-width: 15%;
+    transform: translate(-110%, 70%);
+  }
+
+  .header-mid {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    transform: translate(0, 0%);
+  }
+
+  .header-mid img {
+    width: 500%; /* Set the width to 100% of the parent element */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 10%;
+    z-index: 1; /* Ensure the image appears above the background */
+    transform: translate(-100%, -110%);
+  }
+
+  .button-header-1 {
+    background-color: #6814c9;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    font-weight: 300;
+    padding: 5%, 5%;
+    font-size: 300%;
+    width: 400%;
+    height: 0%;
+    border-color: #9b20f2;
+    box-shadow: 0 0.35rem 0 0 #5d25b7;
+    border-radius: 12em;
+    transform: translate(10%);
+  }
+
+  .button-header-2 {
+    background-color: #f9432b;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    font-weight: 300;
+    padding: 5%, 5%;
+    font-size: 300%;
+    width: 400%;
+    height: 0%;
+    border-color: #f9432b;
+    box-shadow: 0 0.35rem 0 0 #c6283f;
+    border-radius: 12em;
+  }
+
+  .hero-text {
+    color: #fff;
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.5rem 0.625rem 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0.05rem 0 #ffcd2b;
+  }
+
+  .sub-header-item {
+    max-width: 20%;
+  }
+
+  .game-list-hero {
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .game-list-hero-image img {
+    background-color: #d2006e;
+    border-color: #d2006e;
+  }
+
+  .game-list-hero-image img {
+    border-radius: 2em;
+    border-color: #f9432b;
+    box-shadow: 0.5rem 0.5rem 0 0 #c6283f;
+    max-width: 100%;
+  }
+
+  .features-section {
+    padding: 0px var(--padding-inline-section) 0;
+    margin: 0px;
+  }
+
+  .features-area {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+  }
+
+  .feature-card {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    flex-basis: 40%; /* One column for mobile */
+  }
+
+  .upComing-game-card {
+    max-height: 250px; /* Adjust the max-width as needed */
+  }
+
+  .single-game-card {
+    max-height: 250px; /* Adjust the max-width as needed */
+
+    /* Maintain a 16:9 aspect ratio (height is 56.25% of the width) */
+  }
+
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+    max-width: 40%;
+    min-width: 40%;
+  }
+
+  .company-logo-footer img {
+    width: 90px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/*-------------------- Horizontal ----------------------*/
+
+@media (max-width: 991px) and (orientation: landscape) {
+  canvas {
+    height: 100vh;
+  }
+
+  .main-nav {
+    flex-direction: column; /* Display items vertically */
+    width: 10%; /* Adjust the width as needed */
+    height: 100vh; /* Make it full height */
+    position: fixed; /* Fixed position on the left */
+    top: 0;
+    left: 0;
+    background-color: #555; /* Adjust background color */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .company-logo img {
+    width: 50px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 20px;
+    z-index: 1;
+  }
+
+  body {
+    margin-left: 10%; /* Same as the width of the navbar */
+  }
+
+  /*--------------------Header--------------------------*/
+  header {
+    padding: 5%;
+    background-image: url(../images/background2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 700px;
+  }
+
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .drawGame {
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+  }
+
+  .item {
+    text-align: center;
+  }
+
+  .header-left img {
+    width: 300%; /* Set the width to 100% of the parent element */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+
+  .header-left {
+    z-index: 2; /* Ensure the image appears above the background */
+    max-width: 10%;
+    transform: translate(-200%, 0%);
+  }
+
+  .header-mid {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    transform: translate(0, 0%);
+  }
+
+  .header-mid img {
+    width: 400%; /* Set the width to 100% of the parent element */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 10%;
+    z-index: 1; /* Ensure the image appears above the background */
+    transform: translate(-50%, 0%);
+  }
+
+  .button-header-1 {
+    background-color: #6814c9;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    font-weight: 300;
+    padding: 5%, 5%;
+    font-size: 300%;
+    width: 300%;
+    height: 0%;
+    border-color: #9b20f2;
+    box-shadow: 0 0.35rem 0 0 #5d25b7;
+    border-radius: 12em;
+  }
+
+  .button-header-2 {
+    background-color: #f9432b;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    font-weight: 300;
+    padding: 5%, 5%;
+    font-size: 300%;
+    width: 300%;
+    height: 0%;
+    border-color: #f9432b;
+    box-shadow: 0 0.35rem 0 0 #c6283f;
+    border-radius: 12em;
+  }
+}
+
+/*-----------------Load----------------*/
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

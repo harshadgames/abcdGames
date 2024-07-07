@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Carousel</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="reviews-header">
+          <h2>What Our Users Say</h2>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam nec nisl non urna tincidunt efficitur.
+                  </p>
+                </div>
+                <div class="review-author">
+                  <img src="../../images/reviews/review1.png" alt="User 1" />
+                  <p>Rutuja Awake</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-content">
+                  <p>
+                    Curabitur vel ex ut turpis convallis ultrices. Nunc sit amet
+                    sollicitudin lorem.
+                  </p>
+                </div>
+                <div class="review-author">
+                  <img src="../../images/reviews/review2.png" alt="User 2" />
+                  <p>Yanik Don</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-content">
+                  <p>
+                    Curabitur vel ex ut turpis convallis ultrices. Nunc sit amet
+                    sollicitudin lorem.
+                  </p>
+                </div>
+                <div class="review-author">
+                  <img src="../../images/reviews/review4.png" alt="User 2" />
+                  <p>Akshay Belure</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-content">
+                  <p>
+                    Curabitur vel ex ut turpis convallis ultrices. Nunc sit amet
+                    sollicitudin lorem.
+                  </p>
+                </div>
+                <div class="review-author">
+                  <img src="../../images/reviews/review3.PNG" alt="User 2" />
+                  <p>Eva Roberts</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more review cards as needed -->
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS to initialize Swiper -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Web Page</title>
+    <!-- Your other head elements go here -->
+  </head>
+  <body>
+    <!-- Your HTML content goes here -->
+
+    <!-- Include the script tag for the provided JavaScript code -->
+    <script>
+      // Paste the provided JavaScript code here
+      window.dataLayer = window.dataLayer || [];
+      var existingViewItemEvent = window.dataLayer.find(function (item) {
+        return item.event === "view_item";
+      });
+      if (existingViewItemEvent) {
+        existingViewItemEvent.ecommerce.items[0].new_parameter_inside_item =
+          "new_value_inside_item";
+      } else {
+        window.dataLayer.push({
+          event: "view_item",
+          ecommerce: {
+            items: [
+              {
+                new_parameter_inside_item: "new_value_inside_item",
+              },
+            ],
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
