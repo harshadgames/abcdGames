@@ -59,7 +59,7 @@ feedbackForm.addEventListener("submit", (e) => {
       e.target.btn.innerHTML = "Submit";
       feedbackForm.reset();
       document.getElementById("popup-header").querySelector("h3").innerHTML =
-        "Thank You";
+        "Test";
       console.log(finalResp);
 
       feedbackForm.style.display = "none";
@@ -70,43 +70,43 @@ feedbackForm.addEventListener("submit", (e) => {
     });
 });
 
-// Handle contact us submission //
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    console.log("testing contact form");
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault(); // Prevent the default form submission
+    e.preventDefault(); // Prevent the default form submission
+    e.target.btn.innerHTML = "Submitting...";
 
-  e.target.btn.innerHTML = "Submitting...";
+    // Create a FormData object from the feedback form
+    let d = new FormData(feedbackForm);
 
-  // Create a FormData object from the feedback form
-  let d = new FormData(feedbackForm);
-
-  /*
+    /*
   // Append additional data to the FormData object
   const currentDate = new Date().toISOString();
   d.append("time", currentDate);
 */
 
-  const formId = contactForm.className;
-  d.append("time", formId);
+    const formId = feedbackForm.className;
+    d.append("time", formId);
 
-  // Send the FormData object using fetch
-  fetch(url, { method: "POST", body: d })
-    .then((res) => res.text())
-    .then((finalResp) => {
-      e.target.btn.innerHTML = "Submit";
-      feedbackForm.reset();
-      document
-        .getElementById("contact-form-header")
-        .querySelector("h3").innerHTML = "Thank You";
-      console.log(finalResp);
+    // Send the FormData object using fetch
+    fetch(url, { method: "POST", body: d })
+      .then((res) => res.text())
+      .then((finalResp) => {
+        e.target.btn.innerHTML = "Submit";
+        feedbackForm.reset();
+        document.getElementById("popup-header").querySelector("h3").innerHTML =
+          "Test";
+        console.log(finalResp);
 
-      feedbackForm.style.display = "none";
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      e.target.btn.innerHTML = "Submit";
-    });
-});
+        feedbackForm.style.display = "none";
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        e.target.btn.innerHTML = "Submit";
+      });
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper-container", {
@@ -135,4 +135,34 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+});
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent the default form submission
+
+  e.target.btn.innerHTML = "Submitting...";
+
+  // Create a FormData object from the feedback form
+  let d = new FormData(feedbackForm);
+
+  const formId = contactForm.className;
+  d.append("time", formId);
+
+  // Send the FormData object using fetch
+  fetch(url, { method: "POST", body: d })
+    .then((res) => res.text())
+    .then((finalResp) => {
+      e.target.btn.innerHTML = "Submit";
+      feedbackForm.reset();
+      document
+        .getElementById("contact-form-header")
+        .querySelector("h3").innerHTML = "Thank You";
+      console.log(finalResp);
+
+      feedbackForm.style.display = "none";
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      e.target.btn.innerHTML = "Submit";
+    });
 });
