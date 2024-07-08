@@ -72,8 +72,6 @@ feedbackForm.addEventListener("submit", (e) => {
 
 if (contactForm) {
   contactForm.addEventListener("submit", (e) => {
-    console.log("testing contact form");
-
     e.preventDefault(); // Prevent the default form submission
     e.target.btn.innerHTML = "Submitting...";
 
@@ -96,7 +94,7 @@ if (contactForm) {
         e.target.btn.innerHTML = "Submit";
         feedbackForm.reset();
         document.getElementById("popup-header").querySelector("h3").innerHTML =
-          "Test";
+          "Thank You";
         console.log(finalResp);
 
         feedbackForm.style.display = "none";
@@ -135,34 +133,4 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault(); // Prevent the default form submission
-
-  e.target.btn.innerHTML = "Submitting...";
-
-  // Create a FormData object from the feedback form
-  let d = new FormData(feedbackForm);
-
-  const formId = contactForm.className;
-  d.append("time", formId);
-
-  // Send the FormData object using fetch
-  fetch(url, { method: "POST", body: d })
-    .then((res) => res.text())
-    .then((finalResp) => {
-      e.target.btn.innerHTML = "Submit";
-      feedbackForm.reset();
-      document
-        .getElementById("contact-form-header")
-        .querySelector("h3").innerHTML = "Thank You";
-      console.log(finalResp);
-
-      feedbackForm.style.display = "none";
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      e.target.btn.innerHTML = "Submit";
-    });
 });
