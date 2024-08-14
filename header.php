@@ -7,3 +7,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MLPT5NC');</script>
 <!-- End Google Tag Manager -->
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://www.abcdgames.tech",
+  "logo": "https://www.abcdgames.tech/images/logo.png"
+}
+</script>
+
