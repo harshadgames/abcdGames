@@ -46,7 +46,7 @@ export class Explosion {
   update(deltaTime) {
     // Enemy sprite animation
     if (this.frameTimer > this.frameInterval) {
-      console.log(this.frameTimer, this.frameInterval);
+      //console.log(this.frameTimer, this.frameInterval);
       if (this.frameX >= this.maxFrame) {
         this.markForDeletion = true;
       } else {
@@ -55,7 +55,7 @@ export class Explosion {
       this.frameTimer = 0;
       //console.log(this.frameX);
     } else {
-      console.log(deltaTime);
+      //console.log(deltaTime);
       this.frameTimer += deltaTime;
     }
 

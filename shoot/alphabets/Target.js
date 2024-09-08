@@ -7,8 +7,8 @@ export class Target {
   constructor(game, x, frameX, frameY, targetNumber) {
     this.x = x;
     this.y = 0;
-    this.height = 100;
-    this.width = 100;
+    this.height = 280;
+    this.width = 277;
     this.vy = 0;
     this.vx = 30;
     this.game = game;
@@ -28,26 +28,26 @@ export class Target {
 
   draw(context) {
     context.fillStyle = "rgba(255, 0, 0, 0.5)";
-    context.fillRect(this.x, this.y, this.width, this.height);
+    //context.fillRect(this.x, this.y, this.width, this.height);
     context.drawImage(
       this.image,
-      120 + (this.frameX * this.width * 2.5 + this.frameX * 25),
-      215 + (this.frameY * this.height * 2.5 + this.frameY * 25),
-      this.width * 2.5,
-      this.height * 2.5,
+      110 + (this.frameX * this.width ),
+      200 + (this.frameY * this.height ),
+      this.width ,
+      this.height,
       this.x,
       this.y + 100,
-      this.width / 1.5,
-      this.height / 1.5
+      this.width/3 ,
+      this.height/3
     );
   }
 
   update() {
     this.x += this.vx;
 
-    if (this.x > 800 - this.width) {
+    if (this.x > 700 - this.width) {
       this.vx = -2;
-    } else if (this.x < 0) {
+    } else if (this.x < 200) {
       this.vx = +2;
     }
 
@@ -63,15 +63,17 @@ export class Target {
       this.game.objects.push(new Object(this.x, 100, this.game));
       this.markForDeletion = true;
 
-      if (this.game.targetNumber < 26) {
+      if (this.game.targetNumber < 25) {
         this.game.targetNumber += 1;
       } else {
-        this.game.targetNumber = 1;
+        console.log ("target over");
+        this.game.targetNumber = 0;
       }
 
       if (this.game.objectNumber < 26) {
         this.game.objectNumber += 1;
       } else {
+        console.log ("object over");
         this.game.objectNumber = 1;
       }
       //console.log(this.hitCondition);

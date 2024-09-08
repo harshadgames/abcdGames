@@ -65,7 +65,7 @@ class Game {
       this.background
     );
 
-    this.targetNumber = 1;
+    this.targetNumber = 0;
     this.objectNumber = 0;
     this.collisionBlocks = collisionBlocks;
     this.randomXValue = 0;
@@ -118,12 +118,12 @@ class Game {
 
   addTarget() {
     if (this.targets.length == 0) {
-      const frameX = (this.targetNumber % 6) - 1;
+      const frameX = (this.targetNumber % 6);
       const frameY = Math.floor(this.targetNumber / 6);
       this.randomXValue = Math.random() * 600;
       //console.log(this.randomXValue);
       this.targets.push(
-        new Target(this, this.randomXValue, frameX, frameY, this.targetNumber)
+        new Target(this, this.randomXValue, frameX, frameY, this.targetNumber+1)
       );
 
       //this.targets.push(new Target(this,360,frameX,frameY));

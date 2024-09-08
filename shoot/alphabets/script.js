@@ -47,7 +47,7 @@ class Game {
     this.object = {};
     this.objects = [];
 
-    this.targetNumber = 1;
+    this.targetNumber = 0;
     this.objectNumber = 0;
     this.background = new Background(this.width * 1.3, this.height * 1.2, this);
     this.hitcondition = false;
@@ -76,7 +76,12 @@ class Game {
     //this.target.update();
     this.gun.update(ctx);
     this.bullet.update(this.gun.x, input);
-    this.addTarget();
+
+    if (this.targets.length==0)
+    {this.addTarget();
+
+      
+    }
     //console.log(this.targets);
 
     this.targets.forEach((target) => {
@@ -104,22 +109,31 @@ class Game {
   }
 
   addTarget() {
-    if (this.targets.length == 0) {
-      let frameX = 0;
+    if (this.targets.length == 0 & this.bullet.y<100) {
+
+      
+      let frameX = this.targetNumber % 6;
+
+      /*
       if (this.targetNumber % 6 == 0) {
         frameX = (this.targetNumber / 6) * 6;
       } else {
         frameX = (this.targetNumber % 6) - 1;
       }
+      */
 
-      console.log();
+      
       const frameY = Math.floor(this.targetNumber / 6);
-      const randomXValue = (Math.random() * 2 - 1) * 1000;
+      const randomXValue = (Math.random() * 800);
       this.targets.push(
-        new Target(this, randomXValue, frameX, frameY, this.targetNumber)
+        
+        new Target(this, randomXValue, frameX, frameY, this.targetNumber+1)
       );
+      console.log ("add target",this.targetNumber,this.targets,this.bullet.y);
+
+      
       //this.explosions.push( new Explosion(this.targets[0].x,100,this));
-      console.log(this.targets[0].x);
+      //console.log(this.targets[0].x);
     }
 
     /*
@@ -135,7 +149,7 @@ let lastTime = 0;
 
 document.addEventListener("visibilitychange", function () {
   if (document.hidden) {
-    console.log("hidden");
+    //console.log("hidden");
     // Pause the music when the tab is not in view
     audio.pause();
   } else {
@@ -146,7 +160,7 @@ document.addEventListener("visibilitychange", function () {
 });
 
 function animate(timeStamp) {
-  //console.log(input);
+  //console.log(game.targets);
   requestAnimationFrame(animate);
   //--- Code to maintain frame rate----//
   const msNow = window.performance.now();

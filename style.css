@@ -222,14 +222,14 @@ header {
 }
 
 .header-left img {
-  width: 200%; /* Set the width to 100% of the parent element */
+  width: 300%; /* Set the width to 100% of the parent element */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
 
 .header-left {
   z-index: 2; /* Ensure the image appears above the background */
   max-width: 10%;
-  transform: translate(-110%, 0%);
+  transform: translate(-250%, 0%);
 }
 
 .header-mid {
