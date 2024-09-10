@@ -26,7 +26,7 @@
                   onclick="window.location.href='./draw/alphabets/'"
                   >
                   <div class="image-container">
-                    <img src="../../images/thumbnails/draw.png" alt="" />
+                    <img src="../../images/thumbnails/draw.PNG" alt="" />
                   </div>
 
                   <a class="blue"> Draw ABCD </a>
