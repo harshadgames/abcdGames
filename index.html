@@ -1,53 +1,50 @@
-
 <?php include 'config.php'; ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrainyBunny-Play and Learn</title>
 
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-    
-
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Google Tag Manager -->
-  
+
     <?php include (BASE_PATH . '/header.php'); ?>
     <!-- End Google Tag Manager -->
 
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Include Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-<!---------------------------- script------------------------------------------->
-<script type="module" src="script.js"></script>
+    <!---------------------------- script------------------------------------------->
+    <script type="module" src="script.js"></script>
 
-<!-- Include Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <?php include (BASE_PATH . '/body.php'); ?>
+    <!-- End Google Tag Manager (noscript) -->
 
+    <!---------------------------------------nav------------------------------------------>
 
-</head>
-<body>
+    <?php include 'nav.php'; ?>
 
-
-<!-- Google Tag Manager (noscript) -->
-<?php include (BASE_PATH . '/body.php'); ?>
-<!-- End Google Tag Manager (noscript) -->
-
-
-<!---------------------------------------nav------------------------------------------>
-
-<?php include 'nav.php'; ?>
-
-<!--
+    <!--
 
 <div id="nav-placeholder"></div>
 <script>
@@ -60,162 +57,123 @@
 
 -->
 
-
-
-<!------------------------------------ header ------------------------------------------>
-      <header>
-        <div class="container header-section flex">
-
-          <div class="header-left item">
-            <img src="../images/header/header_left.png" /> 
-          </div>
-
-
-          <div class="header-mid item flex">
-            <img src="../images/header/header_mid.png" /> 
-          </div>
-
-          <div class="header-right item">
-
-
-
-            <button type="button" class="button-header-1">
-              <div class="">
-                <a> Play </a>
-              </div>
-            </button>
-
-            <button type="button" class="button-header-2">
-              <div class=""><a> Learn </a></div>
-            </button>
-          </div>
-
+    <!------------------------------------ header ------------------------------------------>
+    <header>
+      <div class="container header-section flex">
+        <div class="header-left item">
+          <img src="../images/header/header_left.png" />
         </div>
 
-      </header>
-
-
-
-      <section id="sub-header">
-
-     
-        <div class="sub-header-items container  flex">
-          
-             <div class="sub-header-item item1">
-                <img src="./images/subHeader/1.png" /> 
-             </div>
-
-
-
-
-              <div class="sub-header-item item3">
-                <img src="./images/subHeader/2.png" /> 
-              </div>
-
-
-              <div class="sub-header-item item4">
-                <img src="./images/subHeader/3.png" /> 
-             </div>
-
-  
-
-              <div class="sub-header-item item6">
-                <img src="./images/subHeader/4.png" /> 
-              </div>
-
-              <div class="sub-header-item item7">
-                <img src="./images/subHeader/5.png" /> 
-             </div>
-
-
-             
-              <div class="sub-header-item item9">
-                <img src="./images/subHeader/1.png" /> 
-              </div>
-
-
-
-
-             <div class="sub-header-item item1">
-              <img src="./images/subHeader/3.png" /> 
-           </div>
-
-
-
-              <div class="sub-header-item item9">
-                <img src="./images/subHeader/1.png" /> 
-              </div>
+        <div class="header-mid item flex">
+          <img src="../images/header/header_mid.png" />
         </div>
 
-      </section>
+        <div class="header-right item">
+          <button type="button" class="button-header-1">
+            <div class="">
+              <a> Play </a>
+            </div>
+          </button>
 
+          <button type="button" class="button-header-2">
+            <div class=""><a> Learn </a></div>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <section id="sub-header">
+      <div class="sub-header-items container flex">
+        <div class="sub-header-item item1">
+          <img src="./images/subHeader/1.png" />
+        </div>
 
-  
-<!---------------------- Feature Section ------------------------------------------------>
+        <div class="sub-header-item item3">
+          <img src="./images/subHeader/2.png" />
+        </div>
 
-      <section class="features-section">
-      
-        <div class="container">
+        <div class="sub-header-item item4">
+          <img src="./images/subHeader/3.png" />
+        </div>
 
-          <!------------------------------ Simple Click games ----------------------------------------->
+        <div class="sub-header-item item6">
+          <img src="./images/subHeader/4.png" />
+        </div>
 
-          <?php include '../../alphabetGames.php'; ?>
+        <div class="sub-header-item item7">
+          <img src="./images/subHeader/5.png" />
+        </div>
 
-          <div id="alphabetGames"></div>
+        <div class="sub-header-item item9">
+          <img src="./images/subHeader/1.png" />
+        </div>
+
+        <div class="sub-header-item item1">
+          <img src="./images/subHeader/3.png" />
+        </div>
+
+        <div class="sub-header-item item9">
+          <img src="./images/subHeader/1.png" />
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- Feature Section ------------------------------------------------>
+
+    <section class="features-section">
+      <div class="container">
+        <!------------------------------ Simple Click games ----------------------------------------->
+
+        <?php include '../../alphabetGames.php'; ?>
+
+        <!--
+
+        <div id="alphabetGames"></div>
+        <script>
+          fetch("alphabetGames.php")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("alphabetGames").innerHTML = data;
+            });
+        </script>
+
+      -->
+
+        <section>
+          <div id="singleCardDraw"></div>
           <script>
-            fetch('alphabetGames.php')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('alphabetGames').innerHTML = data;
-                });
+            fetch("singleCardDraw.php")
+              .then((response) => response.text())
+              .then((data) => {
+                document.getElementById("singleCardDraw").innerHTML = data;
+              });
           </script>
+        </section>
+
+        <!----------------------------- Drawing Games ------------------------------------------>
 
 
-          <section>
-            <div id="singleCardDraw"></div>
-            <script>
-              fetch('singleCardDraw.php')
-                  .then(response => response.text())
-                  .then(data => {
-                      document.getElementById('singleCardDraw').innerHTML = data;
-                  });
-            </script>
-          </section> 
+        <?php include 'upComingGames.php'; ?>
 
-
-          
-        
-  
-          <!----------------------------- Drawing Games ------------------------------------------>
+        <!--
 
         <div id="upComingGames"></div>
         <script>
-          fetch('upComingGames.php')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('upComingGames').innerHTML = data;
-              });
+          fetch("upComingGames.php")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("upComingGames").innerHTML = data;
+            });
         </script>
+      -->
+      </div>
+    </section>
 
+    <!----------------------------------- text-------------------------------------------------->
 
+    
 
-       </div>
-
-        
-      </section>
   
-
-
-
-
-<!----------------------------------- text-------------------------------------------------->
-
-
-<?php include 'upComingGames.php'; ?>
-
-<!--
-
 <section class="text-section">
         <div class="container">
           <div class="text-header">
@@ -272,14 +230,12 @@
 
 </section>
 
--->
 
-<!-----------------------------------reviews--------------------------------------------->
-    
+    <!-----------------------------------reviews--------------------------------------------->
 
     <?php include 'userReviews.php'; ?>
 
-<!--
+    <!--
 
   
     <section class="reviews-section">
@@ -355,50 +311,42 @@
   -->
 
     <!-- Swiper JS -->
-    
 
+    <!----------------------------- The popup form -------------------------------------->
+    <div id="popupForm" class="popup-form">
+      <div class="form-content">
+        <span class="close-btn" id="closeBtn"><h2>&times;</h2></span>
+        <div id="popup-header" class="form-group"><h3>Notify Me</h3></div>
 
-<!----------------------------- The popup form -------------------------------------->
-        <div id="popupForm" class="popup-form">
-          <div class="form-content">
-            
-              <span class="close-btn" id="closeBtn"><h2>&times;</h2></span>
-              <div id="popup-header" class="form-group"> <h3>Notify Me</h3> </div>
-              
-
-              <form id="feedbackForm" class="test">
-
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                  <label for="feedback">Feedback:</label>
-                  <textarea id="feedback" name="feedback" required></textarea>
-              </div>
-              <div class="form-group">
-                  <button type="submit" name="btn">Submit</button>
-              </div>
-
-              </form>
-
+        <form id="feedbackForm" class="test">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
           </div>
+          <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" name="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
+    <!----------------------------Contact form ------------------------------------------>
 
-        </div>
+    <iframe
+      frameborder="0"
+      style="height: 500px; width: 99%; border: none"
+      src="https://forms.zohopublic.com/harshadkhanapure/form/ContactUs/formperma/AQT9u8G6Nqb_zTYIDsFpfD6MUXUmyuzoKBFYGK2NRW0"
+    ></iframe>
 
+    <!---------------------------------- Footer ----------------------------------------->
 
-<!----------------------------Contact form ------------------------------------------>
+    <?php include 'footer.php'; ?>
 
-<iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/harshadkhanapure/form/ContactUs/formperma/AQT9u8G6Nqb_zTYIDsFpfD6MUXUmyuzoKBFYGK2NRW0'></iframe>
-    
-    
-<!---------------------------------- Footer ----------------------------------------->
-
-<?php include 'footer.php'; ?>
-
-
-
+    <!--
 <div id="footer"></div>
 <script>
   fetch('footer.php')
@@ -408,13 +356,6 @@
       });
 </script>
 
-
-    
-
-
-
-
-    
-    
-</body>
+-->
+  </body>
 </html>
