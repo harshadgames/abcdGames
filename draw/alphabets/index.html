@@ -35,6 +35,8 @@
 
   <?php include '../../nav.php'; ?>
 
+  <!--
+
   <div id="nav-placeholder"></div>
   <script>
     fetch('../../nav.php')
@@ -43,6 +45,8 @@
             document.getElementById('nav-placeholder').innerHTML = data;
         });
   </script>
+
+  -->
 
 
 
@@ -130,6 +134,8 @@
 
 <?php include '../../otherGames.php'; ?>
 
+<!--
+
 <div id="otherGames"></div>
 <script>
   fetch('../../otherGames.php')
@@ -139,10 +145,12 @@
       });
 </script>
 
-
+-->
 
 <!-----------------------------------reviews----------------------------->
       <?php include '../../userReviews.php'; ?>
+
+<!--
 
       <div id="userReviews"></div>
       <script>
@@ -153,10 +161,15 @@
             });
       </script>
 
+-->
+
 <!----------------------------------- Footer ------------------------------------------->
 
 
 <?php include '../../footer.php'; ?>
+
+
+<!--
 
 <div id="footer"></div>
 <script>
@@ -166,7 +179,7 @@
           document.getElementById('footer').innerHTML = data;
       });
 </script>
-
+-->
 
    
 </body>
