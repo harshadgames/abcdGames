@@ -17,8 +17,8 @@ include 'config.php';
         <h4>About Us</h4>
         <a href="<?php echo BASE_PATH . 'about/' ?>" class="hover-link">About US</a>
         <a href="<?php echo BASE_PATH . 'terms/' ?>" class="hover-link">Terms of Service</a>
-        <a href="./policy" class="hover-link">Privacy-Policy</a>
-        <a href="./contact" class="hover-link">Contact Us</a>
+        <a href="<?php echo BASE_PATH . 'policy/' ?>" class="hover-link">Privacy-Policy</a>
+        <a href="<?php echo BASE_PATH . 'contact/' ?>" class="hover-link">Contact Us</a>
         
       </div>
       <div class="link-column flex">
