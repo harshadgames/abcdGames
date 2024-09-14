@@ -308,18 +308,28 @@ header {
 
 .sub-header-items {
   padding: 1px;
-  justify-content: center;
+  justify-content:center;
   background-size: cover;
-  min-height: 20px;
   margin-top: -1%;
   background-color: #a2d83d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 0%;
+  
 }
 
 .sub-header-item {
   border-radius: 50%;
   background-color: whitesmoke;
   padding: 1px;
-  margin: 10px;
+  margin: 0.5%;
+}
+
+.sub-header-item img{
+  max-width: 100%;
+
 }
 
 /* Title Section */
@@ -1048,7 +1058,7 @@ video {
 
   header {
     padding: 5%;
-    background-image: url(../images/header/background2.webp);
+    background-image: url(../images/header/background2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1147,7 +1157,7 @@ video {
   }
 
   .sub-header-item {
-    max-width: 20%;
+    max-width: 10%;
   }
 
   .game-list-hero {
