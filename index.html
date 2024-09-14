@@ -46,16 +46,18 @@
 
     <!--
 
-<div id="nav-placeholder"></div>
-<script>
-  fetch('nav.php')
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById('nav-placeholder').innerHTML = data;
-      });
-</script>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch('nav.php')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('nav-placeholder').innerHTML = data;
+          });
+    </script>
 
--->
+    -->
+
+
 
     <!------------------------------------ header ------------------------------------------>
     <header>
@@ -89,7 +91,7 @@
         </div>
 
         <div class="sub-header-item item3">
-          <img src="./images/subHeader/2.png" />
+          <img src="./images/subHeader/5.png" />
         </div>
 
         <div class="sub-header-item item4">
@@ -97,23 +99,23 @@
         </div>
 
         <div class="sub-header-item item6">
-          <img src="./images/subHeader/4.png" />
+          <img src="./images/subHeader/6.png" />
         </div>
 
         <div class="sub-header-item item7">
-          <img src="./images/subHeader/5.png" />
+          <img src="./images/subHeader/2.png" />
         </div>
 
         <div class="sub-header-item item9">
-          <img src="./images/subHeader/1.png" />
+          <img src="./images/subHeader/7.png" />
         </div>
 
         <div class="sub-header-item item1">
-          <img src="./images/subHeader/3.png" />
+          <img src="./images/subHeader/4.png" />
         </div>
 
         <div class="sub-header-item item9">
-          <img src="./images/subHeader/1.png" />
+          <img src="./images/subHeader/8.png" />
         </div>
       </div>
     </section>
@@ -126,7 +128,7 @@
 
         <?php include 'alphabetGames.php'; ?>
 
-        <!--
+       <!--
 
         <div id="alphabetGames"></div>
         <script>
@@ -157,6 +159,8 @@
 
         <!--
 
+        
+
         <div id="upComingGames"></div>
         <script>
           fetch("upComingGames.php")
@@ -165,70 +169,13 @@
               document.getElementById("upComingGames").innerHTML = data;
             });
         </script>
+
       -->
+      
       </div>
     </section>
 
-    <!----------------------------------- text-------------------------------------------------->
 
-    
-
-  
-<section class="text-section">
-        <div class="container">
-          <div class="text-header">
-            <h2>Why Brainy Bunny</h2>
-          </div>
-          <div class="text">
-            <div class="text-card">
-              <div class="text-content">
-                <h4>
-                  "Free and Safe Games for Kids"
-                </h4>
-  
-                <p>
-                  Explore a world of free, educational games designed specifically for babies, toddlers, and kindergarten children. On our platform, we've curated a delightful collection of online games that cater to the developmental needs of your little ones. Our mission is to provide secure and highly recommended online activities dedicated to children, filled with love and offering the best learning opportunities for toddlers, babies, and preschoolers.
-                </p>
-                <br />
-                <p>
-                  Interactive Games for Toddlers: Point and Click (PC) or Tap
-                  (Mobile)
-                </p>
-                <br />
-                <p>
-
-                  We firmly believe that learning should be a joyful and enriching journey for children. That's why our free online educational activities, tailored for kids aged 1 to 5, feature captivating visuals that stimulate imagination and enhance cognitive and motor skills. Join us as we make learning a playful adventure for your little learners
-
-                </p>
-              </div>
-            </div>
-  
-            <div class="text-card">
-              <div class="text-content">
-                <h4>
-                  "Researched and developed with collaboration with teachers and parents"
-                </h4>
-  
-                <p>
- 
-                  During the development stage of our games, we conduct thorough research to understand what aspects of the games engage children the most and how these elements can be used to stimulate their learning and address their weaknesses. We gather extensive feedback from both children and their parents to ensure our games meet their needs and preferences.
-                </p>
-
-                <br />
-  
-                <p>Toddler Games:</p>
-                <p>
-                  We intend to keep our kids' learning games free and aim to be the best among online learning games. Our goal is to develop fun learning games for a variety of purposes, whether they are online infant games, babysitting games, or ABC games for kindergartners. We are committed to developing safe kids' games that are easy to play.
-                </p>
-  
-
-              </div>
-            </div>
-  
-            
-          </div>
-
-</section>
 
 
     <!-----------------------------------reviews--------------------------------------------->
@@ -236,81 +183,168 @@
     <?php include 'userReviews.php'; ?>
 
     <!--
+       
+        <section class="reviews-section">
+          <div class="container">
+            <div class="reviews-header">
+              <h3> 
+                <span class="yellow">What Our </span>
+                <span class="white">Users Say</span>
+
+              </h3>
+
+              <div class="underline-wrapper-broad">
+                <p class="underline-style-broad"></p>
+              </div>
+
+
+              
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-content">
+                      <p>
+                      The simple games available on the platform are perfect even for children as young as one year old. These games are designed to be intuitive and easy to play, allowing young children to engage with them without frustration. They not only keep my child entertained and engaged, but also help in the development of his cognitive abilities
+                      </p>
+                    </div>
+                    <div class="review-author">
+                      <img src="../../images/reviews/review1.png" alt="User 1" />
+                      <p>Rutuja Awake</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-content">
+                      <p>
+                      My kid absolutely loves playing the various games available on the platform. The best part is that while she is having a great time playing, she is also learning valuable skills and knowledge. I see that they are planning to develop fun car games, Bheem games, and Snake and Ladder game, which is like bringing my childhood games online
+                      </p>
+                    </div>
+                    <div class="review-author">
+                      <img src="../../images/reviews/review2.png" alt="User 2" />
+                      <p>Yannick Arensberg</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-content">
+                      <p>
+                      I've noticed a remarkable improvement in my child's studies since he started playing free preschool games on ABCDGames.tech. One of the most significant changes is his ability to remember and recognize alphabets with ease. These games has made learning the alphabets an enjoyable experience for him. I find ABCDGames to be the best games for kids.
+                      </p>
+                    </div>
+                    <div class="review-author">
+                      <img src="../../images/reviews/review4.png" alt="User 2" />
+                      <p>Akshay Belure</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-content">
+                      <p>
+    
+                      The absence of ads also means that they can fully immerse themselves in the educational content, enhancing their learning experience. As a parent, I appreciate the peace of mind that comes with knowing my kids are in a secure, ad-free space while enjoying the free educational games offered by ABCD Games.
+                      </p>
+                    </div>
+                    <div class="review-author">
+                      <img src="../../images/reviews/review3.PNG" alt="User 2" />
+                      <p>Eva Roberts</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+    
+              <div class="swiper-pagination"></div>
+ 
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+      -->
+
+    
 
   
-    <section class="reviews-section">
-      <div class="container">
-        <div class="reviews-header">
-          <h2>What Our Users Say</h2>
-        </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="review-content">
-                  <p>
-                    My kid absolutely loves playing the various games available on the platform. The best part is that while he is having a great time playing, he is also learning valuable skills and knowledge. abcdgames has truly made learning enjoyable and effortless for my kid
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img src="../../images/reviews/review1.png" alt="User 1" />
-                  <p>Rutuja Awake</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="review-content">
-                  <p>
-                    The simple games available on the platform are perfect even for children as young as one year old. These games are designed to be intuitive and easy to play, allowing young children to engage with them without frustration. They not only keep my child entertained and engaged, but also help in the development of his cognitive abilities
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img src="../../images/reviews/review2.png" alt="User 2" />
-                  <p>Yanik Don</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="review-content">
-                  <p>
-                    I've noticed a remarkable improvement in my child's studies since he started playing the educational games on the platform. One of the most significant changes is his ability to remember and recognize alphabets with ease. The interactive and engaging nature of these games has made learning the alphabets an enjoyable experience for him.
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img src="../../images/reviews/review4.png" alt="User 2" />
-                  <p>Akshay Belure</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="review-content">
-                  <p>
-                    The absence of ads also means that they can fully immerse themselves in the educational content, enhancing their learning experience. As a parent, I appreciate the peace of mind that comes with knowing my kids are in a secure, ad-free space while enjoying the educational games offered by ABCD Games.
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img src="../../images/reviews/review3.PNG" alt="User 2" />
-                  <p>Eva Roberts</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <!- - Add Pagination - ->
-          <div class="swiper-pagination"></div>
-          <!- - Add Navigation - ->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-    </section>
 
-  -->
+
+
 
     <!-- Swiper JS -->
+
+        <!----------------------------------- text-------------------------------------------------->
+
+    
+
+  
+<section class="text-section">
+  <div class="container">
+    <div class="text-header">
+      <h3> 
+        <span >Why </span>
+        <span >ABCDGames</span>
+
+      </h3>
+
+      <div class="underline-wrapper-broad">
+        <p class="underline-style-broad"></p>
+      </div>
+    </div>
+    <div class="text">
+      <div class="text-card">
+        <div class="text-content">
+          <h4>
+            "Free and Safe Games for Kids"
+          </h4>
+
+          <p>
+            Explore a world of free, educational games designed specifically for babies, toddlers, and kindergarten children. On our platform, we've curated a delightful collection of online games that cater to the developmental needs of your little ones. Our mission is to provide secure and highly recommended online activities dedicated to children, filled with love and offering the best learning opportunities for toddlers, babies, and preschoolers.
+          </p>
+          <br />
+          <p>
+            Interactive Games for Toddlers: Point and Click (PC) or Tap
+            (Mobile)
+          </p>
+          <br />
+          <p>
+
+            We firmly believe that learning should be a joyful and enriching journey for children. That's why our free online educational activities, tailored for kids aged 1 to 5, feature captivating visuals that stimulate imagination and enhance cognitive and motor skills. Join us as we make learning a playful adventure for your little learners
+
+          </p>
+        </div>
+      </div>
+
+      <div class="text-card">
+        <div class="text-content">
+          <h4>
+            "Researched and developed with collaboration with teachers and parents"
+          </h4>
+
+          <p>
+
+            During the development stage of our games, we conduct thorough research to understand what aspects of the games engage children the most and how these elements can be used to stimulate their learning and address their weaknesses. We gather extensive feedback from both children and their parents to ensure our games meet their needs and preferences.
+          </p>
+
+          <br />
+
+          <p>Toddler Games:</p>
+          <p>
+            We intend to keep our kids' learning games free and aim to be the best among online learning games. Our goal is to develop fun learning games for a variety of purposes, whether they are online infant games, babysitting games, or ABC games for kindergartners. We are committed to developing safe kids' games that are easy to play.
+          </p>
+
+
+        </div>
+      </div>
+
+      
+    </div>
+
+</section>
 
     <!----------------------------- The popup form -------------------------------------->
     <div id="popupForm" class="popup-form">

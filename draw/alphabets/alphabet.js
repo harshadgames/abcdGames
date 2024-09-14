@@ -14,7 +14,7 @@ export class alphabet {
 
   draw(context) {
     //console.log(this.image.src);
-    context.drawImage(this.image, 0, 0, 1000, 1000, 0, 0, 500, 500);
+    context.drawImage(this.image, 0, 0, 500, 500, 0, 0, 500, 500);
   }
 
   update(objectNumber) {

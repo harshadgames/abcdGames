@@ -4,6 +4,20 @@
     <section class="reviews-section">
       <div class="container">
         <div class="reviews-header">
+
+        <h3> 
+                <span class="yellow">What Our </span>
+                <span class="white">Users Say</span>
+
+        </h3>
+
+        <div class="underline-wrapper-broad">
+                <p class="underline-style-broad"></p>
+        </div>
+
+
+
+
           <h2>What Our Users Say</h2>
         </div>
         <div class="swiper-container">
@@ -25,7 +39,7 @@
               <div class="review-card">
                 <div class="review-content">
                   <p>
-                  My kid absolutely loves playing the various games available on the platform. The best part is that while she is having a great time playing, she is also learning valuable skills and knowledge. ABCD Games has truly made learning enjoyable and effortless for my kid. I see that they are planning to develop fun car games, Bheem games, and Snake and Ladder game, which is like bringing my childhood games online
+                  My kid absolutely loves playing the various games available on the platform. The best part is that while she is having a great time playing, she is also learning valuable skills and knowledge. I see that they are planning to develop fun car games, Bheem games, and Snake and Ladder game, which is like bringing my childhood games online
                   </p>
                 </div>
                 <div class="review-author">
@@ -38,7 +52,7 @@
               <div class="review-card">
                 <div class="review-content">
                   <p>
-                  I've noticed a remarkable improvement in my child's studies since he started playing free preschool games on ABCDGames.tech. One of the most significant changes is his ability to remember and recognize alphabets with ease. The interactive and engaging nature of these games has made learning the alphabets an enjoyable experience for him. I find ABCDGames to be the best games with alphabet drawing capabilities.
+                  I've noticed a remarkable improvement in my child's studies since he started playing free preschool games on ABCDGames.tech. One of the most significant changes is his ability to remember and recognize alphabets. These games has made learning the alphabets an enjoyable experience for him. I find ABCDGames to be the best games for kids.
                   </p>
                 </div>
                 <div class="review-author">
