@@ -10,8 +10,8 @@
                 
                 <div class="section-header-white">
                   <h3> 
-                  <span class="yellow">Coming </span>
-                  <span class="white">Soon</span>
+                  <span >Coming </span>
+                  <span >Soon</span>
                   </h3>
 
                   <div class="underline-wrapper-broad">

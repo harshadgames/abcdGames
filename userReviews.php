@@ -6,8 +6,8 @@
         <div class="section-header-color">
 
         <h3> 
-                <span >What Our </span>
-                <span >Users Say</span>
+                <span class="yellow">What Our </span>
+                <span class="white">Users Say</span>
 
         </h3>
 
