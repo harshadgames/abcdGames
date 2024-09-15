@@ -3,11 +3,11 @@
     <!-- Reviews Section -->
     <section class="reviews-section">
       <div class="container">
-        <div class="reviews-header">
+        <div class="section-header-color">
 
         <h3> 
-                <span class="yellow">What Our </span>
-                <span class="white">Users Say</span>
+                <span >What Our </span>
+                <span >Users Say</span>
 
         </h3>
 
@@ -18,7 +18,7 @@
 
 
 
-          <h2>What Our Users Say</h2>
+
         </div>
         <div class="swiper-container">
           <div class="swiper-wrapper">

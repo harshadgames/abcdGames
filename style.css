@@ -616,9 +616,16 @@ a.white {
   padding: 40px 0;
 }
 
-.reviews-header {
+.section-header-color {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.section-header-white {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+
 }
 
 .reviews-header h2 {

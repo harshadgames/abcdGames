@@ -8,10 +8,7 @@
 
               <div class="game-list-hero flex">
                 
-                <div class="upcoming-game-list-hero-text">
-
-
-
+                <div class="section-header-white">
                   <h3> 
                   <span >Coming </span>
                   <span >Soon</span>
