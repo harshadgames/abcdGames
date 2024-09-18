@@ -30,8 +30,10 @@ export class Object {
   draw(context) {
     //console.log(this.frameX);
     //context.drawImage(this.image,this.frameX*this.width,0,this.width,this.height,this.x,this.y,this.width,this.height)
-    context.drawImage(this.image, 0, 0, 1000, 1000, 360, 100, 350, 350);
-  }
+    if (this.image)
+      {context.drawImage(this.image, 0, 0, 1000, 1000, 360, 100, 350, 350);
+    }
+    }
 
   update(deltaTime) {
     // Enemy sprite animation

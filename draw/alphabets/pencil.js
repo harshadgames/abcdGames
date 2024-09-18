@@ -26,10 +26,10 @@ export class Pencil {
       this.image1,
       0,
       0,
-      90,
-      90,
-      this.x - 70,
-      this.y - 140,
+      180,
+      180,
+      this.x - 40,
+      this.y - 175,
       this.width,
       this.height
     );

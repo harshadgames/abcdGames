@@ -35,8 +35,8 @@ export class Target {
   constructor(game, x, frameX, frameY, targetNumber) {
     this.x = x;
     this.y = 0;
-    this.height = 100;
-    this.width = 100;
+    this.height = 280;
+    this.width = 277;
     this.vy = 3;
     this.vx = 0;
     this.game = game;
@@ -58,17 +58,17 @@ export class Target {
 
   draw(context) {
     context.fillStyle = "rgba(255, 0, 0, 0.5)";
-    context.fillRect(this.x, this.y, this.width / 2, this.height / 2);
+    //context.fillRect(this.x, this.y, this.width / 4, this.height / 4);
     context.drawImage(
       this.image,
-      120 + (this.frameX * this.width * 2.5 + this.frameX * 25),
-      215 + (this.frameY * this.height * 2.5 + this.frameY * 25),
-      this.width * 2.5,
-      this.height * 2.5,
+      112 + (this.frameX * this.width ),
+      197 + (this.frameY * this.height ),
+      this.width ,
+      this.height,
       this.x,
       this.y,
-      this.width / 2,
-      this.height / 2
+      this.width / 4,
+      this.height / 4
     );
   }
 

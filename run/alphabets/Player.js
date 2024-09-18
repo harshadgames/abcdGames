@@ -4,8 +4,8 @@ export class Player {
     this.gameHeight = gameHeight;
     this.states = [];
     this.currentState = this.states[0];
-    this.width = 200;
-    this.height = 200;
+    this.width = 295;
+    this.height = 400;
     this.x = 200;
     this.y = 200;
     this.image = document.getElementById("playerImage");
@@ -14,7 +14,7 @@ export class Player {
     this.frameY = 0;
     this.vy = 0;
     this.weight = 0.5;
-    this.maxFrame = 8;
+    this.maxFrame = 5;
     this.frameTimer = 0;
     this.fps = 50;
     this.frameInterval = 500 / this.fps;
@@ -37,14 +37,14 @@ export class Player {
   draw(context) {
     context.drawImage(
       this.image,
-      this.frameX * this.width,
+      this.frameX * this.width+15,
       this.frameY * this.height,
       this.width,
       this.height,
       this.x,
       this.y,
-      this.width / 2,
-      this.height / 2
+      this.width / 2.5,
+      this.height / 2.5
     );
   }
 

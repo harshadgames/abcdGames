@@ -5,11 +5,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Learn Alphabets - Shooting Game</title>
     <link rel="stylesheet" href="../../style.css"> </link>
+
+    <!-- Include Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+
+    <!-- Include Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        
     <!-- Google Tag Manager -->
     <?php include (BASE_PATH . '/header.php'); ?>
     <!-- End Google Tag Manager -->
+
+        <!---------------------------- script------------------------------------------->
+        <script type="module" src="script.js"></script>
   </head>
   <body>
 
@@ -23,7 +37,9 @@
 
 <!---------------------- Nav Bar------------------->
 
-    <?php include '../../nav.php'; ?>
+<?php include '../../nav.php'; ?>
+
+<!--
 
     <div id="nav-placeholder"></div>
     <script>
@@ -34,7 +50,7 @@
           });
     </script>
 
-
+-->
 
 <!---------------------- Main Game------------------->
 
@@ -116,6 +132,9 @@
 <!---------------------other games -------------------->
 <?php include '../../otherGames.php'; ?>
 
+
+<!--
+
 <div id="otherGames"></div>
 <script>
   fetch('../../otherGames.php')
@@ -125,9 +144,15 @@
       });
 </script>
 
+-->
 
 <!-----------------------------------reviews----------------------------->
-<?php include '../../userReviews.php'; ?>
+
+
+<!--
+?php include '../../userReviews.php'; ?>
+
+
 
 <div id="userReviews"></div>
 <script>
@@ -137,7 +162,7 @@
           document.getElementById('userReviews').innerHTML = data;
       });
 </script>
-
+-->
 
 <!---------------------------------- Contact Forms ------------------------------------------->
 
@@ -149,6 +174,8 @@
 
 <?php include '../../footer.php'; ?>
 
+
+<!--
 <div id="footer"></div>
 <script>
   fetch('../../footer.php')
@@ -157,7 +184,7 @@
           document.getElementById('footer').innerHTML = data;
       });
 </script>
-
+-->
 
 <!-----------------------------Linking Script------------------------------------------->
 

@@ -64,13 +64,9 @@ ul {
   font-weight: 200;
 }
 
-.underline-style {
-  background: #eeb721;
-  border-radius: 2rem;
-  height: 10px;
-  width: 60%;
-  margin: 1%;
-}
+
+
+
 
 /* Utility*/
 
@@ -95,12 +91,13 @@ ul {
 }
 
 .primary-button {
-  background-color: var(--accent-color);
+  background-color: #ec3e71;
   border-radius: 6px;
+  border: 3px solid white;
   font-weight: 700;
   color: white !important;
   padding: 6px 12px;
-  box-shadow: 0 0 2px var(--secondary-text-color);
+  box-shadow: 0 0 10px var(black);
   transition: 0.2s ease-out;
 }
 
@@ -222,14 +219,14 @@ header {
 }
 
 .header-left img {
-  width: 200%; /* Set the width to 100% of the parent element */
+  width: 300%; /* Set the width to 100% of the parent element */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
 
 .header-left {
   z-index: 2; /* Ensure the image appears above the background */
   max-width: 10%;
-  transform: translate(-110%, 0%);
+  transform: translate(-250%, 0%);
 }
 
 .header-mid {
@@ -253,7 +250,7 @@ header {
 }
 
 .button-header-1 {
-  background-color: #6814c9;
+  background-color: #5bcda9;
   border-style: solid;
   border-width: 1px;
   color: #fff;
@@ -262,13 +259,13 @@ header {
   font-size: 500%;
   width: 200%;
   height: 0%;
-  border-color: #9b20f2;
-  box-shadow: 0 0.35rem 0 0 #5d25b7;
+  border-color: #5bcda9;
+  box-shadow: 0 0.35rem 0 0 #53bb9a;
   border-radius: 12em;
 }
 
 .button-header-2 {
-  background-color: #f9432b;
+  background-color: #ec3e71;
   border-style: solid;
   border-width: 1px;
   color: #fff;
@@ -311,18 +308,27 @@ header {
 
 .sub-header-items {
   padding: 1px;
-  justify-content: center;
+  justify-content:center;
   background-size: cover;
-  min-height: 20px;
   margin-top: -1%;
-  background-color: #a2d82b;
+  background-color: #a2d83d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 0%;
+  
 }
 
 .sub-header-item {
   border-radius: 50%;
-  background-color: #005ca8;
+  background-color: whitesmoke;
   padding: 1px;
-  margin: 10px;
+  margin: 0.5%;
+}
+
+.sub-header-item img{
+  max-width: 100%;
 }
 
 /* Title Section */
@@ -356,6 +362,28 @@ header {
   width: 60%;
   margin: 1%;
 }
+
+.underline-style-broad {
+  background: #c6283f;
+  border-radius: 2rem;
+  height: 10px;
+  width: 60%;
+  margin: 1%;
+  display: inline-block; /* Makes sure the underline is only as wide as needed */
+  border-bottom: 2px solid black; /* Example style for the underline */
+ 
+
+}
+
+.underline-wrapper-broad {
+  display: inline-block; /* Ensures that the wrapper takes only as much space as needed */
+  width: 60%; /* Optional: only if you want the wrapper to take full width */
+  margin: 0 auto;
+  margin-left: 100px;
+
+}
+
+
 
 /* Features */
 
@@ -437,7 +465,13 @@ header {
 }
 
 .feature-area-collect {
-  background-color: #dd3c68;
+  background-color: whitesmoke;
+}
+
+.feature-area-collect p {
+
+  color: var(--primary-text-color);
+  
 }
 
 .feature-area-shoot {
@@ -578,13 +612,20 @@ a.white {
 
 /* Review Section*/
 .reviews-section {
-  background-color: #f4f4f4;
+  background-color: whitesmoke;
   padding: 40px 0;
 }
 
-.reviews-header {
+.section-header-color {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.section-header-white {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+
 }
 
 .reviews-header h2 {
@@ -600,7 +641,7 @@ a.white {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px; /* Set a fixed height */
+  height: 450px; /* Set a fixed height */
 }
 
 .review-content p {
@@ -613,7 +654,9 @@ a.white {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  
+
 }
 
 .review-author img {
@@ -621,6 +664,7 @@ a.white {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
+  border: 5px solid #d2006e;
 }
 
 .review-author p {
@@ -630,7 +674,7 @@ a.white {
 
 /* Add Swiper-specific styles */
 .reviews-section {
-  background-color: #f4f4f4;
+  background-color: #005ca8;
   padding: 40px 0;
 }
 
@@ -1020,7 +1064,7 @@ video {
 
   header {
     padding: 5%;
-    background-image: url(../images/header/background2.webp);
+    background-image: url(../images/header/background2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1119,7 +1163,7 @@ video {
   }
 
   .sub-header-item {
-    max-width: 20%;
+    max-width: 10%;
   }
 
   .game-list-hero {
