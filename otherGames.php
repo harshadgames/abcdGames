@@ -54,7 +54,7 @@
                   class="feature-card flex"
                   onclick="window.location.href='../../../draw/alphabets/'">
                   <div class="image-container">
-                    <img src="../../images/thumbnails/draw.PNG" alt="" />
+                    <img src="../../images/thumbnails/draw.png" alt="" />
                   </div>
     
                   <a class="blue"> Jump & Run</a>
