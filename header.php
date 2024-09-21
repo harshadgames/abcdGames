@@ -16,3 +16,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 
+<link rel="icon" type="image/png"
+ href="https://www.abcdgames.tech/images/logo.png">
+
