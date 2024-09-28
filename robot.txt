@@ -1,0 +1,30 @@
+User-agent: *
+
+
+Disallow: https://abcdgames.tech/production/terms/policy/index.html
+Disallow: https://abcdgames.tech/production/terms/about/index.html
+Disallow: https://abcdgames.tech/production/terms/terms/index.html
+Disallow: https://abcdgames.tech/production/policy/policy/index.html
+Disallow: https://abcdgames.tech/production/policy/terms/index.html
+Disallow: https://abcdgames.tech/production/policy/contact/index.html
+Disallow: https://abcdgames.tech/production/about/contact/index.html
+Disallow: https://www.abcdgames.tech/draw/alphabets/policy/index.html
+Disallow: https://abcdgames.tech/production/contact/policy/index.html
+Disallow: https://abcdgames.tech/production/contact/contact/index.html
+Disallow: https://abcdgames.tech/contact/contact/index.html
+Disallow: https://abcdgames.tech/production/about/about/index.html
+Disallow: https://abcdgames.tech/production/contact/terms/index.html
+Disallow: https://abcdgames.tech/production/about/terms/index.html
+Disallow: https://abcdgames.tech/production/about/policy/index.html
+Disallow: https://abcdgames.tech/production/contact/about/index.html
+Disallow: https://www.abcdgames.tech/draw/alphabets/terms/index.html
+Disallow: https://www.abcdgames.tech/collect/alphabets/policy/index.html
+Disallow: https://www.abcdgames.tech/draw/alphabets/about/index.html
+Disallow: https://abcdgames.tech/terms/contact/index.html
+Disallow: https://www.abcdgames.tech/collect/alphabets/about/index.html
+Disallow: https://www.abcdgames.tech/collect/alphabets/terms/index.html
+Disallow: https://www.abcdgames.tech/collect/alphabets/contact/index.html
+Disallow: https://abcdgames.tech/run/alphabets/contact/index.html
+Disallow: https://abcdgames.tech/run/alphabets/policy/index.html
+Disallow: https://abcdgames.tech/run/alphabets/terms/index.html
+Disallow: https://abcdgames.tech/run/alphabets/about/index.html
