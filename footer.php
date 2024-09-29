@@ -23,8 +23,8 @@ include 'config.php';
       </div>
       <div class="link-column flex">
         <h4>Contact Us</h4>
-        <p>Mobile:7204562000</p>
-        <p>info@brainybunny.net</p>
+        <p>Mobile:9226817395</p>
+        <p>info@abcdgames.tech</p>
       </div>
       <div class="link-column flex">
         <h4>Pages</h4>
@@ -32,7 +32,7 @@ include 'config.php';
         <a href="../../../draw/alphabets/" class="hover-link">Draw ABCD</a>
         <a href="../../../run/alphabets/" class="hover-link">Jump & Learn</a>
         <a href="../../../collect/alphabets/" class="hover-link"> Catch The Object</a>
-        <a href="#" class="hover-link"> Shoot The Object</a>
+        <a href="../../../shoot/alphabets/" class="hover-link"> Shoot The Object</a>
       </div>
     </div>
   </footer>
