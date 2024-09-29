@@ -1,6 +1,6 @@
 <?php
 // Define the base path
-define('ROOT_PATH', 'https://www.abcdgames.tech/');
+define('ROOT_PATH', __DIR__ . '/');
 
 define('BASE_PATH', 'https://www.abcdgames.tech/');
 

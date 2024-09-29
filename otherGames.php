@@ -57,7 +57,7 @@
                     <img src="../../images/thumbnails/draw.png" alt="" />
                   </div>
     
-                  <a class="blue"> Jump & Run</a>
+                  <a class="blue"> Draw ABCD </a>
                 </div>
 
               </div>
