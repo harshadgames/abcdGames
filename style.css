@@ -157,7 +157,7 @@ ul {
 }
 
 .company-logo img {
-  width: 110px;
+  width: 100px;
   position: absolute;
   top: -10px; /* Adjust this value to control how much the logo overflows */
   left: 20px;
