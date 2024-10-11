@@ -12,10 +12,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@type": "Organization",
   "url": "https://www.abcdgames.tech",
-  "logo": "https://www.abcdgames.tech/images/logo.png"
+  "logo": "https://www.abcdgames.tech/images/icon.png"
 }
 </script>
 
 <link rel="icon" type="image/png"
- href="https://www.abcdgames.tech/images/logo.png">
+ href="https://www.abcdgames.tech/images/icon.png">
 
