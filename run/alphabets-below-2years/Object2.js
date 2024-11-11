@@ -26,10 +26,10 @@ export default class Object2 {
     this.gameHeight = gameHeight;
     this.states = [];
     this.currentState = this.states[0];
-    this.width = 200;
-    this.height = 200;
+    this.width = 300;
+    this.height = 300;
     this.x = game.player.x;
-    this.y = 100;
+    this.y = game.player.y;
     this.image = new Image();
     this.image.src = `../../images/objects/alphabets/1.png`;
 
@@ -65,10 +65,10 @@ export default class Object2 {
         0,
         250,
         250,
-        this.x,
-        this.y - 60,
-        this.width / 2,
-        this.height / 2
+        this.x+30,
+        this.y+100,
+        this.width / 3,
+        this.height / 3
       );
     }
     //this.explosion.draw(context)
@@ -79,7 +79,7 @@ export default class Object2 {
     this.x = this.game.player.x;
 
     if (this.game.objectNumber > 0) {
-      this.applyGravity();
+      //this.applyGravity();
 
       //console.log("before collision", this.onGroud);
       this.image.src = `../../images/objects/alphabets/${this.game.objectNumber}.png`;

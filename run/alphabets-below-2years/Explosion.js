@@ -35,10 +35,10 @@ export default class Explosion {
       0,
       this.width,
       this.height,
-      this.x,
-      this.y,
-      this.width / 2,
-      this.height / 2
+      this.x - 70,
+      this.y - 100,
+      this.width,
+      this.height
     );
     //context.drawImage(this.image,0,0,this.width,this.height,this.x,this.y/1.5,this.width/5,this.height/5)
   }

@@ -11,6 +11,8 @@ export default class Background {
 
     this.image1 = document.getElementById("backgroudImage1");
     this.image2 = document.getElementById("backgroudImage2");
+    this.restart = document.getElementById ("restart");
+    this.levelToddler= document.getElementById ("levelToddler");
     this.x1 = 0;
     this.x2 = 800;
     this.y = 0;
@@ -21,8 +23,15 @@ export default class Background {
 
   draw(context) {
     context.drawImage(this.image1, this.x1, this.y, this.width, this.height);
-
     context.drawImage(this.image2, this.x2, this.y, this.width, this.height);
+
+    if (!this.game.gameRunning) {
+    context.drawImage(this.restart, 270, 120, 250, 250); 
+    context.drawImage(this.levelToddler, 270, 220, 250, 250); 
+  
+  }
+
+    
   }
 
   update() {

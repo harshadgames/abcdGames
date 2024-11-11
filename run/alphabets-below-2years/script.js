@@ -2,7 +2,7 @@ import Game from "./Game.js";
 import { CollisionBlock } from "./collisionBlock.js";
 import { floorCollisions } from "./collisions.js";
 
-let gameSpeed = 8;
+let gameSpeed = 5;
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -81,11 +81,14 @@ document.getElementById("canvas").addEventListener("click", function (event) {
   let clickX = (event.clientX - canvas.getBoundingClientRect().left) / screenWidthRatio;
   let clickY = (event.clientY - canvas.getBoundingClientRect().top) / screenWidthRatio;
 
-  let retryBtnClick = (clickY < 280);
-  let levelBtnClick = (clickY > 310);
+  let levelBtnClick = (clickY > 450  & clickX >550);
 
+ 
+  if  (levelBtnClick) {
+    window.location.href = "https://abcdgames.tech/run/alphabets-below-2years/";
+  }
 
-  if (loaded & !game.gameRunning &retryBtnClick) {
+  else if (loaded & !game.gameRunning) {
     startGame = true;
     game.gameRunning = true;
     game.player.y = 200;
@@ -96,9 +99,7 @@ document.getElementById("canvas").addEventListener("click", function (event) {
 
     animate(0);
   }
-  else if (levelBtnClick){
-    window.location.href = "https://abcdgames.tech/run/alphabets-below-2years/";
-  }
+
 });
 
 document.addEventListener("visibilitychange", function () {
