@@ -14,7 +14,7 @@ export default class Enemy {
     this.y = gameHeight / 8;
     this.frameX = 0;
     this.frameY = 0;
-    this.speed = 10 / currentDPI;
+    this.speed = 5;
     this.markForDeletion = false;
     this.maxFrame = 1;
     this.frameTimer = 0;
@@ -25,7 +25,7 @@ export default class Enemy {
     this.audioPath = `../../audio/alphabetsObjects/${objectNumber + 1}.mp3`;
     this.hitAudio = new Audio(this.audioPath);
     this.image = new Image();
-    this.image.src = `../../images/alphabets/alphabets.png`;
+    this.image.src = `../../images/alphabets/alphabets_bw.png`;
   }
 
   draw(context) {

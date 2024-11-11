@@ -894,7 +894,9 @@ footer {
 #nextImage,
 #previousImage,
 #bird,
-#video {
+#video,
+#levelToddler,
+#level2Years {
   display: none;
 }
 
