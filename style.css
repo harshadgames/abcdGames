@@ -800,11 +800,12 @@ a.white {
 .text-header {
   text-align: center;
   margin-bottom: 30px;
+  background-color: #d2006e;
 }
 
 .text-header h2 {
   font-size: 2rem;
-  color: var(--primary-text-color);
+  color: whitesmoke;
 }
 
 .text {
@@ -896,7 +897,8 @@ footer {
 #bird,
 #video,
 #levelToddler,
-#level2Years {
+#level2Years,
+#restart {
   display: none;
 }
 

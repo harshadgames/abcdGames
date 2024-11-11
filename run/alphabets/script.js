@@ -96,7 +96,7 @@ document.getElementById("canvas").addEventListener("click", function (event) {
 
     animate(0);
   }
-  else if (levelBtnClick){
+  else if (levelBtnClick & loaded & !game.gameRunning){
     window.location.href = "https://abcdgames.tech/run/alphabets-below-2years/";
   }
 });
